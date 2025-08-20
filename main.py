@@ -28,7 +28,7 @@ try:
             if (c.author.isChatModerator or c.author.isChatOwner) and (config.prefix in c.message ):
                 game_title = c.message.split(":")[1]
                 print(f"Title changed to {game_title.lstrip()}")
-                youtube_handler.update_game_title(obs_handler, "Yazı6", config.prefix, game_title.lstrip())
+                youtube_handler.update_game_title(obs_handler, config.source_name, config.prefix, game_title.lstrip())
 
 except KeyboardInterrupt:
     print("Exiting...")
