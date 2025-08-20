@@ -17,13 +17,13 @@ class Config:
             json.dump(final, f)
     
     def ask_for_config(self):
-        prefix = input("Enter the prefix for the chat messages: ")
+        prefix = input("Enter the prefix (Default 'Oyun:'): ")
         if prefix != "":
             self.prefix = prefix
         password = input("Enter the OBS password: ")
         if password != "":
             self.password = password
-        video_id = input("Enter the video ID: ")
+        video_id = input("Enter the video Id: ")
         if video_id != "":
             self.video_id = video_id 
         source_name = input("Enter the source name: ")
